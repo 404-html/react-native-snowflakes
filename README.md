@@ -9,7 +9,20 @@ npm i -S react-native-snowflakes
 
 ## Usage
 
-TBA.
+```js
+import Snowflakes from 'react-native-snowflakes';
+
+class ExampleView extends Component {
+
+  render() {
+    return (
+      <Snowflakes />
+    );
+  }
+
+}
+
+```
 
 ## Params
 | Params                | Type          | Description  |
