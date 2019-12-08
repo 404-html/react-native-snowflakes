@@ -12,6 +12,7 @@ const Snowflake = (props) => {
 	const horizontalMoveDuringLifeTime = 6;
 	const animationDelay = Math.round(Math.random() * (20000));
 
+	// Set of animations for horizontal snowflake bouncing
 	const animations = [];
 	const maxHorizontalMove = width / 10;
 	for (let i = 0; i < horizontalMoveDuringLifeTime; i++) {
@@ -19,10 +20,10 @@ const Snowflake = (props) => {
 		x += (i % 2 === 0) ? horizontalMove : - horizontalMove;
 		animations.push(Animated.timing(
 			xAnim, {
-				toValue: x,
-				duration:  lifeTime / horizontalMoveDuringLifeTime,
-				delay: i === 0 ? animationDelay : 0
-			}
+			toValue: x,
+			duration: lifeTime / horizontalMoveDuringLifeTime,
+			delay: i === 0 ? animationDelay : 0
+		}
 		));
 	}
 
@@ -64,9 +65,17 @@ const Snowflake = (props) => {
 	);
 }
 
-export default () => {
-	const { height } = Dimensions.get('window');
+export default (props) => {
 
+	if (props.snowOnlyAroundXmass) {
+		const currentDate = new Date();
+		if (currentDate.getMonth() !== 11 // 11 stands for December
+			|| currentDate.getDate() < 18) {
+			return null;
+		}
+	}
+
+	const { height } = Dimensions.get('window');
 	return (
 		<View pointerEvents="none" style={{
 			flex: 1,
