@@ -1,4 +1,4 @@
-# react-native-snowflakes
+# React Native Snowflakes ❄🌨
 XMASS snowflakes decoration for React Native apps
 
 ## Instalation
