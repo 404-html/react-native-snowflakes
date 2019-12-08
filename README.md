@@ -1,5 +1,5 @@
-# React Native Snowflakes ❄🌨
-XMASS snowflakes decoration for React Native apps
+# React Native Snowflakes ❄
+XMASS snowflakes decoration for React Native apps 🌨🎅🎄
 
 ## Instalation
 
