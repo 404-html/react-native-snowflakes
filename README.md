@@ -1,10 +1,10 @@
-# react-native-snowflakes
-XMASS snowflakes decoration for React Native apps
+# React Native Snowflakes ❄
+XMASS snowflakes decoration for React Native apps 🌨🎅🎄
 
 ## Instalation
 
 ```
-npm i -S react-native-snowflakes
+yarn add react-native-snowflakes
 ```
 
 ## Usage
