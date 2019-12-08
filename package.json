@@ -1,0 +1,19 @@
+{
+  "name": "react-native-snowflakes",
+  "version": "1.0.0",
+  "description": "XMASS snowflakes decoration for React Native apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/404-html/react-native-snowflakes.git"
+  },
+  "keywords": [
+    "react native",
+    "snowflakes"
+  ],
+  "author": "Artur Drozdz <contact@fullcolor.eu>",
+  "license": "MIT"
+}
