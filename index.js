@@ -33,7 +33,7 @@ const Snowflake = (props) => {
 			Animated.timing(
 				yAnim,
 				{
-					toValue: height + 40,
+					toValue: height + props.size * 2,
 					duration: 20000,
 					easing: Easing.linear,
 					delay: animationDelay
@@ -54,8 +54,8 @@ const Snowflake = (props) => {
 				position: 'absolute',
 				left: xAnim,
 				top: yAnim,
-				height: 20,
-				width: 20,
+				height: props.size,
+				width: props.size,
 				opacity: .6
 			}}
 			source={require('./snowflake.png')}
@@ -75,18 +75,24 @@ const Snowflakes = (props) => {
 		}
 	}
 
-	const { height } = Dimensions.get('window');
+	const { width, height } = Dimensions.get('window');
+	const sizeOfSnowflakes = props.sizeOfSnowflakes || (Math.max(width, height) / 35);
 	const numberOfSnowflakes = props.numberOfSnowflakes || 10;
 	return (
 		<View pointerEvents="none" style={{
 			flex: 1,
 			position: 'absolute',
 			width: '100%',
-			top: -20,
-			height: height + 20
+			top: -sizeOfSnowflakes,
+			height: height + sizeOfSnowflakes
 		}}>
-			{[...Array(numberOfSnowflakes)].map((e, i) => <Snowflake key={i} index={i}
-				total={numberOfSnowflakes} />)}
+			{[...Array(numberOfSnowflakes)].map((e, i) =>
+				<Snowflake
+					key={i}
+					index={i}
+					total={numberOfSnowflakes}
+					size={sizeOfSnowflakes}
+				/>)}
 		</View>
 	)
 }

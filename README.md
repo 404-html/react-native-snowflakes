@@ -31,6 +31,7 @@ class ExampleView extends Component {
 | --------------------- |:-------------:| ------------ | ------------ |
 | `snowOnlyAroundXmass` | `Boolean`     | Renders snowflakes ❄ only for two weeks around XMAS. Set it to `true` and forgot about this package.      |`false` |
 | `numberOfSnowflakes`  | `Integer`     |Number of snowflakes to be rendered | `10`         |
+| `sizeOfSnowflakes`    | `Integer`     |Size (in `px`) of snowflakes        | Supreme dimension divided by 35 |
 
 ## Buy me a coffee 👇
 https://www.buymeacoffee.com/404html
