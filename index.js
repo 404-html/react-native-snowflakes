@@ -10,7 +10,7 @@ const Snowflake = (props) => {
 
 	const lifeTime = 20000;
 	const horizontalMoveDuringLifeTime = 6;
-	const animationDelay = Math.round(Math.random() * (20000));
+	const animationDelay = (lifeTime / props.total) * props.index;
 
 	// Set of animations for horizontal snowflake bouncing
 	const animations = [];
@@ -76,15 +76,17 @@ const Snowflakes = (props) => {
 	}
 
 	const { height } = Dimensions.get('window');
+	const numberOfSnowflakes = props.numberOfSnowflakes || 10;
 	return (
 		<View pointerEvents="none" style={{
 			flex: 1,
 			position: 'absolute',
 			width: '100%',
 			top: -20,
-			height: height + 40
+			height: height + 20
 		}}>
-			{[...Array(props.numberOfSnowflakes || 10)].map((e, i) => <Snowflake key={i} index={i} />)}
+			{[...Array(numberOfSnowflakes)].map((e, i) => <Snowflake key={i} index={i}
+				total={numberOfSnowflakes} />)}
 		</View>
 	)
 }
