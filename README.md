@@ -1,5 +1,5 @@
 # React Native Snowflakes ❄
-XMASS snowflakes decoration for React Native apps 🌨🎅🎄
+XMAS snowflakes decoration for React Native apps 🌨🎅🎄
 
 ![done](https://user-images.githubusercontent.com/45104241/70398716-8c18d480-1a1e-11ea-8051-99a8d22a0a1a.gif)
 
@@ -29,7 +29,7 @@ class ExampleView extends Component {
 ## Params
 | Params                | Type          | Description  |
 | --------------------- |:-------------:| ------------ |
-| `snowOnlyAroundXmass` | `Boolean`     | Renders Snowflakes ❄ only for two weeks around XMASS. Set it to `true` and forgot about this package. |
+| `snowOnlyAroundXmass` | `Boolean`     | Renders Snowflakes ❄ only for two weeks around XMAS. Set it to `true` and forgot about this package. |
 
 ## Buy me a coffee 👇
 https://www.buymeacoffee.com/404html
