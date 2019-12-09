@@ -65,7 +65,7 @@ const Snowflake = (props) => {
 	);
 }
 
-export default (props) => {
+const Snowflakes = (props) => {
 
 	if (props.snowOnlyAroundXmass) {
 		const currentDate = new Date();
@@ -84,7 +84,9 @@ export default (props) => {
 			top: -20,
 			height: height + 40
 		}}>
-			{[...Array(20)].map((e, i) => <Snowflake key={i} />)}
+			{[...Array(props.numberOfSnowflakes || 10)].map((e, i) => <Snowflake key={i} index={i} />)}
 		</View>
 	)
 }
+
+export default Snowflakes;

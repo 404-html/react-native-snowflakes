@@ -27,9 +27,10 @@ class ExampleView extends Component {
 ```
 
 ## Params
-| Params                | Type          | Description  |
-| --------------------- |:-------------:| ------------ |
-| `snowOnlyAroundXmass` | `Boolean`     | Renders Snowflakes ❄ only for two weeks around XMAS. Set it to `true` and forgot about this package. |
+| Params                | Type          | Description  | Default      |
+| --------------------- |:-------------:| ------------ | ------------ |
+| `snowOnlyAroundXmass` | `Boolean`     | Renders snowflakes ❄ only for two weeks around XMAS. Set it to `true` and forgot about this package.      |`false` |
+| `numberOfSnowflakes`  | `Integer`     |Number of snowflakes to be rendered | `10`         |
 
 ## Buy me a coffee 👇
 https://www.buymeacoffee.com/404html
