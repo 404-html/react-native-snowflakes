@@ -1,6 +1,6 @@
 {
   "name": "react-native-snowflakes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "XMASS snowflakes decoration for React Native apps",
   "main": "index.js",
   "scripts": {
