@@ -31,5 +31,5 @@ class ExampleView extends Component {
 | --------------------- |:-------------:| ------------ |
 | `snowOnlyAroundXmass` | `Boolean`     | Renders Snowflakes ❄ only for two weeks around XMASS. Set it to `true` and forgot about this package. |
 
-☕☕☕☕☕👇
+## Buy me a coffee 👇
 https://www.buymeacoffee.com/404html
