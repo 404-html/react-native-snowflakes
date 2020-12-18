@@ -22,7 +22,8 @@ const Snowflake = (props) => {
 			xAnim, {
 			toValue: x,
 			duration: lifeTime / horizontalMoveDuringLifeTime,
-			delay: i === 0 ? animationDelay : 0
+			delay: i === 0 ? animationDelay : 0,
+			useNativeDriver: true
 		}
 		));
 	}
@@ -36,7 +37,8 @@ const Snowflake = (props) => {
 					toValue: height + props.size * 2,
 					duration: 20000,
 					easing: Easing.linear,
-					delay: animationDelay
+					delay: animationDelay,
+					useNativeDriver: true
 				}
 			)
 		).start();
@@ -52,8 +54,10 @@ const Snowflake = (props) => {
 			style={{
 				...props.style,
 				position: 'absolute',
-				left: xAnim,
-				top: yAnim,
+				transform: [
+					{ translateX: xAnim },
+					{ translateY: yAnim }
+				],
 				height: props.size,
 				width: props.size,
 				opacity: .6
